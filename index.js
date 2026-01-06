@@ -17,7 +17,12 @@ let sendData;
 
 function init() {
     console.log("status initiating.");
-    return 1;
+    if (receiveData === RPC_STATE_INITIATE) {
+        sendData = sendData * RPC_VEHICLE_DIRECTION_FORWARD;
+    } else {
+        sendData = -1;
+    }
+    return sendData;
 }
 
 function onMove() {

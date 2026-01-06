@@ -14,12 +14,10 @@ const RPC_VEHICLE_DIRECTION_REVERSE = 2;
 
 let receiveData;
 let sendData;
-let lastData;
 
 function init() {
     console.log("status initiating.");
     if (receiveData === RPC_STATE_INITIATE) {
-        lastData = sendData;
         sendData = sendData * RPC_VEHICLE_DIRECTION_FORWARD;
     } else {
         sendData = -1;

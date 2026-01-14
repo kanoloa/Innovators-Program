@@ -1,0 +1,19 @@
+name: MazdaInnovatorsProgram
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v6
+
+    - name: Check zip
+      run: |
+        which zip
+        curl --version
+
+    - name: Check directory
+      run: ls -al
+      

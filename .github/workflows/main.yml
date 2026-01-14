@@ -10,7 +10,9 @@ jobs:
     - uses: actions/checkout@v6
 
     - name: Check zip
-      run: which zip
+      run: |
+        which zip
+        curl --version
 
     - name: Check directory
       run: ls -al

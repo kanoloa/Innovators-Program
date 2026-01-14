@@ -12,7 +12,7 @@ jobs:
     - name: Check zip
       run: |
         which zip
-        curl --version
+        which curl
 
     - name: Check directory
       run: ls -al

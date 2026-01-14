@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite skipped="0" hostname="github-action"
+           name="com.intland.codebeamer.functionaltest.test.AuthenticationTests" tests="3" failures="0" timestamp="16 OCT 2025 23:35:21 GMT" time="50.020" errors="0">
+    <testcase classname="com.intland.xunit.RPCTest" name="testBuzzOn" time="0.01" />
+    <testcase classname="com.intland.xunit.RPCTest" name="testBuzzOff" time="0.001" />
+    <testcase classname="com.intland.xunit.RPCTest" name="testBuzzAbort" time="0.001" />
+</testsuite>

@@ -16,4 +16,7 @@ jobs:
 
     - name: Check directory
       run: ls -al
+
+    - name: Check tests directory
+      run: cd tests && ls -al
       

@@ -17,8 +17,7 @@ jobs:
         ls -al
 
     - name: Move to test directory
-      run: cd tests
-
-    - name: Check the current directory
-      run: pwd
-      
+      run: |
+        cd tests
+        pwd
+        ls -al

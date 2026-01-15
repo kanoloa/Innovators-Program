@@ -4,19 +4,21 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
 
-    - name: Check zip
+    - name: Check out repository code
+      uses: actions/checkout@v6
+
+    - name: Check current directory and its contents
       run: |
-        which zip
-        which curl
+        pwd
+        ls -al
 
-    - name: Check directory
-      run: ls -al
+    - name: Move to test directory
+      run: cd tests
 
-    - name: Check tests directory
-      run: cd tests && ls -al
+    - name: Check the current directory
+      run: pwd
       

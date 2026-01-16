@@ -35,3 +35,5 @@ jobs:
         -F 'file=@report.zip'
         https://pp-2601022022fx.portal.ptc.io:9443/cb/rest/xunitresults/
         -u myne:myne
+    - name: complete
+      run: echo "upload completed."

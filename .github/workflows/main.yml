@@ -16,9 +16,21 @@ jobs:
         pwd
         ls -al
 
-    - name: Move to test directory
+    - name: zip report file
       run: |
         cd tests
-        pwd
-        ls -al
-        echo "processing done."
+        zip ../report.zip report.xml
+
+    - name: upload test result
+      run: >
+        curl -F 'configuration={
+        "testConfigurationId":"1026147",
+        "testCaseTrackerId":"114008",
+        "testCaseId":"1026145",
+        "releaseId":"",
+        "testRunTrackerId":"114003",
+        "buildIdentifier":"Build123",
+        "defaultPackagePrefix":""}'
+        -F 'file=@report.zip'
+        https://alms.japaneast.cloudapp.azure.com/dev/rest/xunitresults/
+        -u v133308:v133308

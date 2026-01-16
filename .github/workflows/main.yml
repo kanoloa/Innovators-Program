@@ -20,6 +20,8 @@ jobs:
       run: |
         cd tests
         zip ../report.zip report.xml
+        cd ../
+        ls -al
 
     - name: upload test result
       run: >
@@ -33,4 +35,4 @@ jobs:
         "defaultPackagePrefix":""}'
         -F 'file=@report.zip'
         https://alms.japaneast.cloudapp.azure.com/dev/rest/xunitresults/
-        -u v133308:v133308
+        -u myne:myne

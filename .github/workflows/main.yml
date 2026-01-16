@@ -11,10 +11,9 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v6
 
-    - name: Check current directory and its contents
+    - name: Clean up old reports
       run: |
-        pwd
-        ls -al
+        rm -f report.zip
 
     - name: zip report file
       run: |
@@ -34,5 +33,5 @@ jobs:
         "buildIdentifier":"Build123",
         "defaultPackagePrefix":""}'
         -F 'file=@report.zip'
-        https://alms.japaneast.cloudapp.azure.com/dev/rest/xunitresults/
+        https://pp-2601022022fx.portal.ptc.io:9443/cb/rest/xunitresults/
         -u myne:myne

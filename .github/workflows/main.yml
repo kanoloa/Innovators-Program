@@ -25,15 +25,15 @@ jobs:
     - name: upload test result
       run: >
         curl -F 'configuration={
-        "testConfigurationId":"1026147",
-        "testCaseTrackerId":"114008",
-        "testCaseId":"1026145",
+        "testConfigurationId":"1031813",
+        "testCaseTrackerId":"170543",
+        "testCaseId":"1031815",
         "releaseId":"",
-        "testRunTrackerId":"114003",
+        "testRunTrackerId":"170552",
         "buildIdentifier":"Build123",
         "defaultPackagePrefix":""}'
         -F 'file=@report.zip'
-        https://pp-2601022022fx.portal.ptc.io:9443/cb/rest/xunitresults/
+        https://pp-2608070745qj.portal.ptc.io:9443/cb/rest/xunitresults/
         -u myne:myne
     - name: complete
       run: echo "upload completed."

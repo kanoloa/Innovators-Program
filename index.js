@@ -11,6 +11,7 @@ const RPC_STATE_ABORT = 3;
 const RPC_STATE_COMPLETE = 9;
 const RPC_VEHICLE_DIRECTION_FORWARD = 1;
 const RPC_VEHICLE_DIRECTION_REVERSE = 1;
+const NEWSON = 0;
 
 let receiveData;
 let sendData;

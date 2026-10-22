@@ -1,7 +1,7 @@
 /*
  * This program is for demonstration. Do not use in any production environment.
  * MAZDA INNOVATORS PROGRAM, 2025 - 2026
- * Created by kanoloa@mac.com
+ * Created by ayamada@ptc.com
  */
 
 const RPC_STATE_INITIATE = 0;
